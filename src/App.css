@@ -1,0 +1,15 @@
+#wrap{
+  width: 580px;
+  padding-bottom: 70px;
+  margin: 0 auto;
+  background-color: rgb(43, 43, 43);
+}
+#wrap>h1{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+  box-sizing: border-box;
+  color: #fff;
+}

@@ -1,0 +1,116 @@
+{
+  "drama": [
+    {
+      "id": "0",
+      "name": "도깨비",
+      "genre": "판타지",
+      "imageUrl": "./images/drama/Goblin.webp"
+    },
+    {
+      "id": "1",
+      "name": "슬기로운 의사생활2",
+      "genre": "의학",
+      "imageUrl": "./images/drama/HospitalPlaylist2.webp"
+    },
+    {
+      "id": "2",
+      "name": "킹더랜드",
+      "genre": "로맨틱 코미디",
+      "imageUrl": "./images/drama/KingTheLand.webp"
+    },
+    {
+      "id": "3",
+      "name": "마당이 있는 집",
+      "genre": "스릴러",
+      "imageUrl": "./images/drama/LiesHiddenInMyGarden.webp"
+    },
+    {
+      "id": "4",
+      "name": "미스터 션샤인",
+      "genre": "시대극",
+      "imageUrl": "./images/drama/MrSunshine.webp"
+    },
+    {
+      "id": "5",
+      "name": "구미호뎐",
+      "genre": "판타지",
+      "imageUrl": "./images/drama/TaleOfTheNineTailed.webp"
+    }
+  ],
+  "movie": [
+    {
+      "id": "1001",
+      "name": "영웅",
+      "genre": "시대극",
+      "imageUrl": "./images/movie/Hero.webp"
+    },
+    {
+      "id": "1002",
+      "name": "기생충",
+      "genre": "블랙코미디",
+      "imageUrl": "./images/movie/Parasite.webp"
+    },
+    {
+      "id": "1003",
+      "name": "은밀하게 위대하게",
+      "genre": "액션",
+      "imageUrl": "./images/movie/SecretlyGreatly.webp"
+    },
+    {
+      "id": "1004",
+      "name": "킬러의 보디가드",
+      "genre": "액션",
+      "imageUrl": "./images/movie/TheHitmansBodyguard.webp"
+    },
+    {
+      "id": "1005",
+      "name": "검은 사제들",
+      "genre": "판타지",
+      "imageUrl": "./images/movie/ThePriests.webp"
+    },
+    {
+      "id": "1006",
+      "name": "위플래쉬",
+      "genre": "음악",
+      "imageUrl": "./images/movie/Whiplash.webp"
+    }
+  ],
+  "animation": [
+    {
+      "id": "2001",
+      "name": "귀멸의 칼날",
+      "genre": "판타지",
+      "imageUrl": "./images/anime/DemonSlayer.webp"
+    },
+    {
+      "id": "2002",
+      "name": "강철의 연금술사",
+      "genre": "판타지",
+      "imageUrl": "./images/anime/FullmetalAlchemist.webp"
+    },
+    {
+      "id": "2003",
+      "name": "주술회전",
+      "genre": "퇴마",
+      "imageUrl": "./images/anime/JujutsuKaisen.webp"
+    },
+    {
+      "id": "2004",
+      "name": "라바",
+      "genre": "코미디",
+      "imageUrl": "./images/anime/Larva.webp"
+    },
+    {
+      "id": "2005",
+      "name": "최애의 아이",
+      "genre": "성장",
+      "imageUrl": "./images/anime/OshiNoKo.webp"
+    },
+    {
+      "id": "2006",
+      "name": "스파이 패밀리",
+      "genre": "첩보",
+      "imageUrl": "./images/anime/SPY×FAMILY.webp"
+    }
+  ]
+}
