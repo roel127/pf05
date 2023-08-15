@@ -1,5 +1,8 @@
 import { AiOutlineHeart, AiFillHeart} from 'react-icons/ai';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToWish, removeFromWish } from '../redux/User';
 
+// swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Pagination } from 'swiper/modules';
@@ -8,6 +11,9 @@ export default function Home( {list} ){
   const drama = list.drama;
   const movie = list.movie;
   const anime = list.animation;
+  const { wishProductIds } = useSelector(state=>state.wish);
+  const dispatch = useDispatch();
+
   return(
       <article>
         <section>
@@ -32,8 +38,14 @@ export default function Home( {list} ){
                         <dt>{item.name}</dt>
                         <dd>{item.genre}</dd>
                         <dd>
-                          <button type='button'><AiOutlineHeart /></button>
-                          <button type='button'><AiFillHeart /></button>
+                          {
+                            !wishProductIds.includes(item.id) &&
+                            (<button type='button' onClick={()=>dispatch(addToWish(item.id))}><AiOutlineHeart /></button>)
+                          }
+                          {
+                            wishProductIds.includes(item.id) &&
+                            (<button type='button' onClick={()=>dispatch(removeFromWish(item.id))}><AiFillHeart /></button>)
+                          }
                         </dd>
                       </dl>
                     </figcaption>
@@ -66,8 +78,14 @@ export default function Home( {list} ){
                         <dt>{item.name}</dt>
                         <dd>{item.genre}</dd>
                         <dd>
-                          <button type='button'><AiOutlineHeart /></button>
-                          <button type='button'><AiFillHeart /></button>
+                          {
+                            !wishProductIds.includes(item.id) &&
+                            (<button type='button' onClick={()=>dispatch(addToWish(item.id))}><AiOutlineHeart /></button>)
+                          }
+                          {
+                            wishProductIds.includes(item.id) &&
+                            (<button type='button' onClick={()=>dispatch(removeFromWish(item.id))}><AiFillHeart /></button>)
+                          }
                         </dd>
                       </dl>
                     </figcaption>
@@ -100,8 +118,14 @@ export default function Home( {list} ){
                         <dt>{item.name}</dt>
                         <dd>{item.genre}</dd>
                         <dd>
-                          <button type='button'><AiOutlineHeart /></button>
-                          <button type='button'><AiFillHeart /></button>
+                          {
+                            !wishProductIds.includes(item.id) &&
+                            (<button type='button' onClick={()=>dispatch(addToWish(item.id))}><AiOutlineHeart /></button>)
+                          }
+                          {
+                            wishProductIds.includes(item.id) &&
+                            (<button type='button' onClick={()=>dispatch(removeFromWish(item.id))}><AiFillHeart /></button>)
+                          }
                         </dd>
                       </dl>
                     </figcaption>
