@@ -9,7 +9,7 @@ import { Pagination } from 'swiper/modules';
 
 export default function Home( {list} ){
   const drama = list.drama;
-  const movie = list.movie;
+  const cinema = list.cinema;
   const anime = list.animation;
   const { wishProductIds } = useSelector(state=>state.wish);
   const dispatch = useDispatch();
@@ -69,7 +69,7 @@ export default function Home( {list} ){
               }}
               className="mySwiper"
             >
-              {movie.map(item=>{return(
+              {cinema.map(item=>{return(
                 <SwiperSlide key={item.id}>
                   <figure>
                     <img src={item.imageUrl} alt={item.name} />

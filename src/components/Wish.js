@@ -21,12 +21,12 @@ export default function Wish( {list} ){
     cur.forEach(item=>{
       wishProductIds.forEach(cpValue=>{
         if(item.id === cpValue){
-          acc.push(item);
+          acc.unshift(item);
         }
       })
     })
     return acc;
-  },[])
+  }, [])
 
   return(
     <div id="wishWrap">
