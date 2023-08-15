@@ -68,3 +68,9 @@ export default function Wish( {list} ){
     </div>
   )
 }
+
+// wishProductIds를 객체를 value로 가진 배열로 만듦
+// 해당 객체는 property로 id와 times=new Date().getTime()을 가짐
+// resultWishList에는 item.id === cpValue.id 개체가 들어감
+// if(item.id === cpValue) cpValue.times는 resultWishList의 value의 property로 새로 들어감
+// resultWishList내의 value.times로 sort를 진행!
