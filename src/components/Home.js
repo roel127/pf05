@@ -39,11 +39,13 @@ export default function Home( {list} ){
                         <dd>{item.genre}</dd>
                         <dd>
                           {
-                            !wishProductIds.includes(item.id) &&
+                            !(wishProductIds.filter(val=>val.id === item.id).length >= 1) &&
+                            // !wishProductIds.includes(item.id) &&
                             (<button type='button' onClick={()=>dispatch(addToWish(item.id))}><AiOutlineHeart /></button>)
                           }
                           {
-                            wishProductIds.includes(item.id) &&
+                            wishProductIds.filter(val=>val.id === item.id).length >= 1 &&
+                            // wishProductIds.includes(item.id) &&
                             (<button type='button' onClick={()=>dispatch(removeFromWish(item.id))}><AiFillHeart /></button>)
                           }
                         </dd>
@@ -79,11 +81,13 @@ export default function Home( {list} ){
                         <dd>{item.genre}</dd>
                         <dd>
                           {
-                            !wishProductIds.includes(item.id) &&
+                            !(wishProductIds.filter(val=>val.id === item.id).length >= 1) &&
+                            // !wishProductIds.includes(item.id) &&
                             (<button type='button' onClick={()=>dispatch(addToWish(item.id))}><AiOutlineHeart /></button>)
                           }
                           {
-                            wishProductIds.includes(item.id) &&
+                            wishProductIds.filter(val=>val.id === item.id).length >= 1 &&
+                            // wishProductIds.includes(item.id) &&
                             (<button type='button' onClick={()=>dispatch(removeFromWish(item.id))}><AiFillHeart /></button>)
                           }
                         </dd>
@@ -119,11 +123,13 @@ export default function Home( {list} ){
                         <dd>{item.genre}</dd>
                         <dd>
                           {
-                            !wishProductIds.includes(item.id) &&
+                            !(wishProductIds.filter(val=>val.id === item.id).length >= 1) &&
+                            // !wishProductIds.includes(item.id) &&
                             (<button type='button' onClick={()=>dispatch(addToWish(item.id))}><AiOutlineHeart /></button>)
                           }
                           {
-                            wishProductIds.includes(item.id) &&
+                            wishProductIds.filter(val=>val.id === item.id).length >= 1 &&
+                            // wishProductIds.includes(item.id) &&
                             (<button type='button' onClick={()=>dispatch(removeFromWish(item.id))}><AiFillHeart /></button>)
                           }
                         </dd>

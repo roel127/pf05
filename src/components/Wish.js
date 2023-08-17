@@ -17,16 +17,28 @@ export default function Wish( {list} ){
   //     })
   //   })
   // })
+  // const resultWishList = vals.reduce((acc,cur)=>{
+  //   cur.forEach(item=>{
+  //     wishProductIds.forEach(cpValue=>{
+  //       if(item.id === cpValue){
+  //         acc.unshift(item);
+  //       }
+  //     })
+  //   })
+  //   return acc;
+  // }, [])
   const resultWishList = vals.reduce((acc,cur)=>{
     cur.forEach(item=>{
       wishProductIds.forEach(cpValue=>{
-        if(item.id === cpValue){
+        if(item.id === cpValue.id){
+          item.times = cpValue.times;
           acc.unshift(item);
         }
       })
     })
-    return acc;
+    return acc.sort((a,b)=>a.times > b.times ? -1 : a.times < b.times ? 1 : 0);
   }, [])
+  console.log(wishProductIds);
 
   return(
     <div id="wishWrap">
