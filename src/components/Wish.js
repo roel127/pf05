@@ -38,7 +38,6 @@ export default function Wish( {list} ){
     })
     return acc.sort((a,b)=>a.times > b.times ? -1 : a.times < b.times ? 1 : 0);
   }, [])
-  console.log(wishProductIds);
 
   return(
     <div id="wishWrap">

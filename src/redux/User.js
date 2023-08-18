@@ -40,7 +40,6 @@ const user = createSlice({
     },
     removeFromWish(state, action){
       const indexOfId = state.wishProductIds.findIndex(item=>item.id === action.payload);
-      console.log(indexOfId);
       state.wishProductIds.splice(indexOfId, 1);
     },
     clearWish(state){
